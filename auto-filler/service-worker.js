@@ -59,15 +59,5 @@ chrome.action.onClicked.addListener(async (tab) => {
       console.error("Error extracting form data:", chrome.runtime.lastError);
       return;
     }
-    const formFields = extractedData[0]; // Since only one function is injected
-    if (!formFields) {
-      // Show a popup if no form is detected
-      chrome.windows.create({
-        type: 'popup',
-        url: 'popup.html',
-        width: 300,
-        height: 200
-      });
-    }
   });
 });

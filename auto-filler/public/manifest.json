@@ -4,8 +4,8 @@
   "manifest_version": 3,
   "version": "0.1",
   "description": "Fills up the form on page with dummy data.",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["activeTab", "scripting"],
   "background": {
-    "service_worker": "service-worker.js"
+    "service_worker": "background.js"
   }
 }
